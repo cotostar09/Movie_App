@@ -73,7 +73,6 @@ class App extends Component {
 
   render() {
     console.log('did render')
-    console.log(this.state.movies)
     return (
       <div className={this.state.movies ? "App" : "App--loading"}>
         {this.state.movies ? this._renderMovies() : 'loading'  }
